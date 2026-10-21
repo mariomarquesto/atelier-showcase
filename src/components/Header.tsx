@@ -16,13 +16,13 @@ export default function Header() {
 
   return (
     <header className="fixed top-0 left-0 w-full z-50 bg-obsidian/80 backdrop-blur-2xl border-b border-graphite px-6 md:px-8 py-5">
-      <div className="max-w-[1400px] mx-auto flex items-center justify-between">
+      <div className="max-w-350 mx-auto flex items-center justify-between">
         <Link href="/" className="flex flex-col">
           <span className="text-2xl font-display tracking-[0.3em] text-bone uppercase">
             ATELIER<span className="text-gold">.</span>
           </span>
           <span className="text-[8px] uppercase tracking-[0.5em] text-neutral-500 font-mono -mt-1">
-            Anillos - Relojes - Correas
+            Anillos - Relojes - Correas - Pulseras
           </span>
         </Link>
 

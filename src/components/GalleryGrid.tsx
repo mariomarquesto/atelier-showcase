@@ -67,11 +67,11 @@ export default function GalleryGrid({ onSelect, initialCategory = "all" }: Galle
                   height={1500}
                   sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   priority={index < 3}
-                  className="h-full w-full object-cover grayscale opacity-85 transition-all duration-[1200ms] ease-out group-hover:scale-105 group-hover:grayscale-0 group-hover:opacity-100"
+                  className="h-full w-full object-cover grayscale opacity-85 transition-all duration-1200 ease-out group-hover:scale-105 group-hover:grayscale-0 group-hover:opacity-100"
                 />
 
                 {/* Gradiente inferior para legibilidad */}
-                <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent" />
+                <div className="pointer-events-none absolute inset-0 bg-linear-to-t from-black/80 via-black/10 to-transparent" />
 
                 {/* Badge categoría */}
                 <span className="absolute left-4 top-4 border border-white/10 bg-black/70 px-3 py-1 font-mono text-[9px] uppercase tracking-[0.3em] text-gold backdrop-blur-md">
