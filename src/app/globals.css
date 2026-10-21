@@ -1,27 +1,25 @@
-@import "tailwindcss";
+﻿@import "tailwindcss";
+:root {
+  --color-obsidian: #050505;
+  --color-gold: #c6a664;
+  --color-gold-light: #e8d5a3;
+  --color-bone: #f5f0e6;
+  --color-graphite: #1a1a1a;
+  --color-wine: #5b1f2a;
+}
 
 @layer base {
+  html { scroll-behavior: smooth; }
   body {
-    background-color: #080808;
-    color: #e5e5e5;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-    overflow-x: hidden;
+    background: var(--color-obsidian);
+    color: var(--color-bone);
+    -webkit-font-smoothing: antialiased;
   }
+  ::selection { background: var(--color-gold); color: #000; }
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
-/* Custom Glassmorphism Utility */
-.glass-panel {
-  background: rgba(18, 18, 18, 0.7);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(212, 175, 55, 0.12);
-}
-
-.glass-panel-hover:hover {
-  border-color: rgba(212, 175, 55, 0.35);
-  box-shadow: 0 0 30px rgba(212, 175, 55, 0.08);
+@layer utilities {
+  .font-display { font-family: var(--font-cormorant), ui-serif, Georgia, serif; }
+  .font-mono { font-family: var(--font-jetbrains), ui-monospace, monospace; }
+  .text-balance { text-wrap: balance; }
 }
